@@ -335,7 +335,7 @@ def argparser():
         "-L",
         "--location",
         action="store_true",
-        defualt=True,
+        default=True,
         help="Allow for redirections, can be dangerous if credentials are passed in headers",
     )
     request_set.add_argument(
