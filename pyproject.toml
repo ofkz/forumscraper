@@ -14,7 +14,7 @@ authors = [
   {name = "Dominik Stanisław Suchora", email = "suchora.dominik7@gmail.com" }
 ]
 
-dependencies = ['requests','reliq']
+dependencies = ['curl-cffi','reliq']
 
 classifiers = [
   "Development Status :: 4 - Beta",

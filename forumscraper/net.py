@@ -3,7 +3,7 @@
 
 import random
 import time
-import requests
+from curl_cffi import requests
 from threading import Lock
 from reliq import reliq
 
@@ -130,7 +130,7 @@ def to_requests_settings(settings):
 
 class Session(requests.Session):
     def __init__(self, **kwargs):
-        super().__init__()
+        super().__init__(impersonate="chrome")
 
         self.lock = Lock()
 
